@@ -1,0 +1,10 @@
+It is important to notice that the memory management behaviour as well as the Garbage Collector behaviour and other optimizations are specific to the Python implementation you are using, in this case, CPython. There are many other Python implementations and some of those are the following:
+
+Jython = written in Java, can import and use any Java class, and it actually compiles to Java bytecode which can then be run on a Java Virtual Machine.
+
+IronPython = written in C# and targets .Net (and mono) CLR.
+
+PyPy = written in RPython(which is itself a statically-typed subset of Python written in C that is specifically designed to write interpreters).
+
+There are specific int numbers that when instantiated and referenced by two variables don't actually make those variables become shared references. This happens because of something called interning. Interning is the process where Python pre-loads a specific range of ints(in the case of CPython version 3.6, [-5, 256]) because of their wide and regular use in programs in order to optimize speed and diminish the number of returns. The numbers on that range are called Singletons because they are from a class that can only instantiate one object. So, when you declare a variable that is pointing to a value in that range, CPython doesn't need to create the value and allocate it to a memory address, it justs points the variable to the already instantiated object.
+

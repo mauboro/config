@@ -1,0 +1,9 @@
+On the subject of interning, it is important to notice that some strings are interned by Python, but not all!
+
+As the the Python code is compiled, the identifiers(variable names, function names, class names and etc.) are interned. Some string literals might also be automatically interned. String literals that look like identifiers: ("hello_world"). And even string literals that start with a digit(can't serve as identifiers) can sometimes be internet. The "sometimes" word should tell you that you can't count on it.
+
+But why intern strings? Well, it serves well when optimizing memory and speed since as the code is being compiled, Python executeslots of dictionary type lookups, on string keys, which means a lot of string equality testing. For example, if we use the "=="(equality) operator to compare two strings, the comparison is made character by character, which, in a larger scale, could result in a  reasonable amount of resources expenditure. But if we know that both variables are pointing to the same string object and therefore this string has been interned, we can use the "is"(identity) operator to compare the memory addressess that both references are pointing to, a much faster and resource-friendly(lol) process.
+
+But, remember, not all string are interned by Python. This process can be, however, forced to happen with the sys module function called "sys.intern()". An often unnecessary process that should only be executed in specific situations such as when you are dealing with a large number of strings that have to be, for example, tokenized. Interninge recurring pieces of strings can help with a possible memory overhead since those strings will be actually pointing to the same place.
+
+

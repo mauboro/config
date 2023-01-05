@@ -1,0 +1,30 @@
+When we think about variable equality, we think about it in two major aspects of equality: object's memory address equality and object's internal state equality, respectively, identity and equality, respectively(again lol) "is" and "==". We can check the identy(does those two objects share the same memory address?) of two objects by using the "is" operator or its negation version, the "is not" operator. And we can check the equality(does those two objects have the same internal state) with the "==" operator or its negation version "!=". Let's do a few comparisons:
+
+a = 10
+b = 10
+
+a is b: True
+a == b: True
+
+a = "hello"
+b = "hello"
+
+a is b: True
+a == b: True
+
+a = [1, 2, 3]
+b = [1, 2, 3]
+
+a is b: False
+a == b: True
+
+a = 10
+b = 10.0
+
+a is b: False
+a == b: True
+
+That last one is interesting, right?
+
+That None is an object like everything in Python and multiple variables pointing to None are actually shared references to it.
+

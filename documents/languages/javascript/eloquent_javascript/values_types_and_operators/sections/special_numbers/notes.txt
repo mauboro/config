@@ -1,0 +1,1 @@
+There are three types of special numbers that are considered numbers but don't behave like normal numbers, those are: Infinity, -Infinity and NaN.

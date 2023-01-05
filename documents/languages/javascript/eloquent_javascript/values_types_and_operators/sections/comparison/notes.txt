@@ -1,0 +1,1 @@
+You can yield boolean values by using the comparison operators >, <, >=, <=, ==, !=, !==, === that are respectively greater than, less than, greater or equal than, less or equal than, equal to, not equal to, precisely not equal to and precisely equal to. More on the precise ones later. Its nice to notice that when comparing strings, JavaScript compares the length.

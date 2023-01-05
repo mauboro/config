@@ -1,0 +1,1 @@
+In order to work with so many bits in a program, you have to categorize chunks of data(bits) into values, every value has a type and every type plays a role in the program's functionality. And, to top all of this, to create a value, you must merely invoke, just like a FUCKING GOD, JUST LIKE ENKI, NAM FUCKING SHUB BROOOOOOOOOOO.

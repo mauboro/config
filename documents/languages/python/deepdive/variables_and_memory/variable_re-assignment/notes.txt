@@ -1,0 +1,1 @@
+It is important to stress the fact that variable re-assignment doesn't change the value that the variable was pointing to, it creates a variable in another memory address and then makes the variable be a reference to that newly created object(of fixed type).
