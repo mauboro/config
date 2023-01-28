@@ -1,1 +1,0 @@
-Well, I am already familiar with boolean values and this section had no code so that's it :).

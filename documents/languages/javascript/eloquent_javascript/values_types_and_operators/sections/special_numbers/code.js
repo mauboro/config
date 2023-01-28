@@ -1,5 +1,0 @@
-console.log(0 / 0)
-console.log(Infinity + 1)
-console.log(Infinity - 1)
-console.log(-Infinity + 1)
-console.log(-Infinity - 1)

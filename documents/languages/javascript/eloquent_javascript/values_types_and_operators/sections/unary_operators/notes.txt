@@ -1,3 +1,0 @@
-Operators that take only one value like typeof are called unary operators, those that take two are called binaries operators and the only one that takes three values is called the ternary operator(more on this one later). It is nice to see that the "-" operator can take two or one value, making it a unary and binary operator.
-
-

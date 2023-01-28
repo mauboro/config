@@ -1,1 +1,0 @@
-Operations with operators like "+" and "-" take two values and produce a new value from it. The order of operations is the same as with the PEMDAS standard. 

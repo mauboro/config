@@ -1,7 +1,0 @@
-console.log(typeof 5)
-console.log(typeof 5.7)
-console.log(typeof 5.7e2)
-console.log(typeof "5")
-console.log(typeof Infinity) 
-console.log(typeof NaN) 
-console.log(- (5 * 7))
