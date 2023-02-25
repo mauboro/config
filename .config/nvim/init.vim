@@ -9,10 +9,10 @@
 
 call plug#begin()
 
-Plug 'bluz71/vim-moonfly-colors'
+Plug 'rktjmp/lush.nvim'
+Plug 'mcchrish/zenbones.nvim'
 Plug 'https://github.com/preservim/nerdtree'
-Plug 'https://github.com/vim-airline/vim-airline'
-Plug 'http://github.com/vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 Plug 'Yggdroot/indentLine'
 let g:indentLine_concealcursor = 'inc'
 let g:indentLine_conceallevel = 2
@@ -25,7 +25,7 @@ set encoding=UTF-8
 
 call plug#end()
 
-colorscheme moonfly
+colorscheme zenbones
 
 nnoremap <C-f> :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
